@@ -621,16 +621,16 @@ namespace GestaoFormandos
 
             bool flag = false;
 
-            // Verifica se o parâmetro 'id_formador' tem algum valor e se algum filtro já foi aplicado
-            if (id_formador.Length > 0 && flag == true)
+            // Verifica se o parâmetro 'id_area' tem algum valor e se algum filtro já foi aplicado
+            if (id_area.Length > 0 && flag == true)
             {
-                // Se sim, adiciona cláusula AND para filtrar por id_formador
-                query += " AND id_formador = '" + id_formador + "'";
+                // Se sim, adiciona cláusula AND para filtrar por id_area
+                query += " AND id_area = '" + id_area + "'";
             }
-            else if (id_formador.Length > 0)
+            else if (id_area.Length > 0)
             {
-                // Se não, adiciona cláusula WHERE para filtrar por id_formador
-                query += " WHERE id_formador = '" + id_formador + "'";
+                // Se não, adiciona cláusula WHERE para filtrar por id_area
+                query += " WHERE id_area = '" + id_area + "'";
                 flag = true;
             }
 
